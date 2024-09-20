@@ -1,6 +1,6 @@
 const apiKey = 'api_key=2b25563f7d119f43b3c99b93e7e19cdc';
 const baseUrl = 'https://api.themoviedb.org/3';
-const imgUrl = 'http://image.tmdb.org/t/p/original/';
+const imgUrl = 'https://image.tmdb.org/t/p/original/';
 
 const requests = {
     fetchTrending: `${baseUrl}/trending/all/week?${apiKey}&language=en-US`,
