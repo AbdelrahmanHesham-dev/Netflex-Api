@@ -258,17 +258,13 @@ footer {
 footer a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 15px;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: white;
 }
 
 footer ul li {
   list-style: none;
   margin-top: 10px;
 }
+
 
 footer select {
   outline: none;
@@ -278,11 +274,9 @@ footer select {
   font-size: 15px;
   margin-left: 25px;
   border-radius: 5px;
-  appearance: none;
-  cursor: pointer;
 }
 
-footer select:focus {
+footer select:focus{
   outline: 1px solid white;
   background-color: #000000;
 }
@@ -306,20 +300,16 @@ footer .selectmenu .Netflix {
 
 @media (max-width: 576px) {
   .hiden {
-    display: none;
+      display: none;
   }
-
   footer {
-    padding: 70px 40px;
-    text-align: center;
+      padding: 70px 40px;
+      text-align: center;
   }
-
   footer .selectmenu .fa-globe {
-    left: 1rem;
-  }
-
-  .Netflix {
-    margin-left: 0;
-    margin-top: 0.5rem;
+      color: white;
+      position: absolute;
+      top: 9px;
+      left: 90px
   }
 }
