@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,34 +12,41 @@
     <link rel="stylesheet" href="css/sign.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header >
+    <header>
         <a href="index.html"><img src="imegs/netflix_logo.png" alt=""></a>
     </header>
-<section class="sign-in">
-    <div class="maindiv ">
-        <form method="get" action="main.html" onkeydown="valid();" autocomplete="off">
-            <h3>Sign In</h3>
-            <input type="email" name="email" id="email" placeholder="Email Or Mobile number" required>
-            <p id="emailError"></p>
-            <input type="password" name="password" id="password" placeholder="password" required>
-            <p id="passwordError"></p>
-            <button id="submitBtn" type="submit">Sign In</button>
+    <section class="sign-in">
+        <div class="maindiv ">
+    
+            <form onkeydown="valid();" autocomplete="off">
+                <h3>Sign In</h3>
+                <input type="email" name="email" id="email" placeholder="Email Or Mobile number" required>
+                <p id="emailError"></p>
+                <input type="password" name="password" id="password" placeholder="password" required>
+                <p id="passwordError"></p>
+                
+                <!-- استخدام a tag للتنقل -->
+                <a id="submitBtn" href="main.html" class="btn" role="button" style="pointer-events: none;">Sign In</a>
+            
                 <div><a class="Forgot-password" href="#">Forgot password?</a></div>
-             <div class="Remember-Me">
-                <input type="checkbox" name="Rememberme" id="">
-                <span class="Remember-Me">Remember Me</span>
-             </div>
-             <div class="newNetflix">
-                <p>New To Netflix?</p> 
-                <a href="index.html">Sign up now.</a>
-             </div>
-             <p class="lorem">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span>Learn more.</span></p>
-        </form>        
-    </div>
-</section>    
+                <div class="Remember-Me">
+                    <input type="checkbox" name="Rememberme" id="">
+                    <span class="Remember-Me">Remember Me</span>
+                </div>
+                <div class="newNetflix">
+                    <p>New To Netflix?</p> 
+                    <a href="index.html">Sign up now.</a>
+                </div>
+                <p class="lorem">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span>Learn more.</span></p>
+            </form>
+            
+        </div>
+    </section>
     <!-----------------------------end hero ----------------------------------->
 
     <footer>
@@ -46,13 +54,13 @@
             <a href="#">Questions? Contact us.</a>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                     <ul>
+                    <ul>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Investor Relations</a></li>
                         <li><a href="#">Privacy</a></li>
                         <li><a href="#">Speed Test</a></li>
-                     </ul>
-                     <div class="selectmenu">
+                    </ul>
+                    <div class="selectmenu">
                         <i class="fa-solid fa-globe"></i>
                         <select name="" id="">
                             <option value="en">English</option>
@@ -67,7 +75,7 @@
                         <li><a href="#">Jobs</a></li>
                         <li><a href="#">Cookie Preferences</a></li>
                         <li><a href="#">Legal Notices</a></li>
-                     </ul>
+                    </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 hiden">
                     <ul>
@@ -75,16 +83,16 @@
                         <li><a href="#">Ways to Watch</a></li>
                         <li><a href="#">Corporate Information</a></li>
                         <li><a href="#">Only on Netflix</a></li>
-                     </ul>
+                    </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 hiden" >
+                <div class="col-lg-3 col-md-6 col-sm-6 hiden">
                     <ul>
                         <li><a href="#">Media Center</a></li>
                         <li><a href="#">Terms of Use</a></li>
                         <li><a href="#">Contact Us</a></li>
-                     </ul>
+                    </ul>
                 </div>
-               
+
             </div>
         </div>
     </footer>
@@ -96,4 +104,5 @@
     <script src="js/all.min.js"></script>
     <script src="js/signin.js"></script>
 </body>
+
 </html>
